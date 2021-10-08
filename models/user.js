@@ -53,7 +53,7 @@ const joiUserSchema = Joi.object({
 const joiSchemaAddUser = Joi.object({
   password: Joi.string().required(),
   email: Joi.string().email(emailRegexp).required(),
-  name: Joi.string().required(),
+  // name: Joi.string().required(),
 });
 
 const joiSchemaChangeUser = Joi.object({
